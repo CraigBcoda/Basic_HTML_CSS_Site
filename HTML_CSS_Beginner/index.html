@@ -1,0 +1,95 @@
+<!-- this info at the top is part of every single website on the web... use intellitype to
+make an !, that will auto fill all this stuff. One thing to note is that
+There is a link rel below that is how you link your css stylesheet. 
+That has to be added in after. ! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KittyKittyKitty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- you have a few subtags that are single use that form the webpage, header, main, and footer
+it is important to know them-->
+    <header>
+        <!-- section and div groups things together in general whereas label is kind of just
+            used for specific things like buttons and inputs. section acts as more
+            of a page break.
+            
+            Fun fact ctrl+kc makes these comments appear and alt+arrows moves a line up and down
+            and shift+alf+f auto-indents your code!-->
+
+        <section>
+            <!--The next couple of lines are just headers and paragraph sizing of text-->
+            <h1>Cats Websites</h1>
+            <!-- now below this is something called nav which is usually part
+            of the header and links to different things within your site by using the id= attribute
+            on something else in the page-->
+            <nav style="color:aquamarine; background-color: bisque;">
+                <a href="#footer">
+                    <p>Bottom</p>
+                </a>
+            </nav>
+    </header>
+    <main>
+
+        <h2>Everything you should know about cats</h2>
+
+        <p>Cats are the greatest thing on the planet. You should respect their brilliance.</p>
+
+        <!--This img tag below has an attribute 
+        called source src and it is a self closing-->
+        </section>
+
+
+        <section>
+            <div id="the_first_div">
+
+                <img style="width: 80%"
+                    src="data:image/jpeg;base64,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"
+                    alt="cat_profile_image" />
+
+                <!--Below is basically how you make a link in html. using 'a' which stands
+                for anchor. The anchor part references to another place on the internet
+                the href part tells you what the link is going to be. The target=blank
+                lets you open up in a new window instead of the same window-->
+
+                <a href="https://www.google.com" target="_blank">
+                    <p>Click here for more cat images</p>
+            </div>
+            </a>
+
+            <!-- this form thing below is exactly what it sounds like. It is a container
+                for forms and user input in general-->
+
+            <form class="form_stuff">
+
+                <!--The input is going to be for user input whereas the placeholder is just
+                        prefilled in text before the user enters their own. it is also a self-closing
+                        tag just like the img tag. The Hevviness and input are just a child of
+                        label.. I guess they can have similar attributes or operate together-->
+
+                <label>
+                    <p>The Hevviness</p>
+                    <input placeholder="Enter Cat Weight" />
+                </label>
+
+                <!--There is a button tag that makes a literal button.. right now with
+                            this code, the button doesn't function-->
+
+                <button>
+                    <p>submit</p>
+                </button>
+            </form>
+        </section>
+</body>
+
+</html>
+</main>
+<footer id="footer">
+    Copyright 2024
+</footer>
