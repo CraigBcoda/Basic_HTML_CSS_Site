@@ -1,15 +1,16 @@
 /* the * makes it so that you select everything on the page */
 * {
-    /* box sizing is the property and border box makes it so that the element contains borders? Margin allows space outside of borders whereas padding changes margin from something to the border from the inside*/
+    /* box sizing is the property and border box makes it so that the element takes padding border into account as part of height/width basically making height and width the determining factor for the box
+    outline regardless of padding. Margin allows space outside of borders whereas padding changes margin from something to the border from the inside*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* when it comes to fonts, the generic all is lowest in hierarchy, then tags, then class, then id */
+    /* when it comes to attributes, the generic all is lowest in hierarchy, then tags, then class, then id */
     font-family: 'Inter', sans-serif;
     color: #0f172a;
 }
 
-body {
+body{
     /* the reason you do the things below is because you add the flex property which adds the ability to do the bottom step which makes the body take up entire view */
     font-size: 1.0rem;
     display: flex;
@@ -19,15 +20,18 @@ body {
 i{
     cursor: pointer;
 }
-
 button{
     cursor: pointer;
-    border: none;
+}
+.button_grid button{
+    cursor: pointer;
     padding: .3rem;
     border-radius: .5rem;
+    box-sizing: border-box;
+    border: 1px solid transparent
 }
 
-button:hover{
+.button_grid button:hover{
     border: 1px solid rgb(212, 212, 212);
     
     box-shadow: 0 4 1 rgb(212, 212, 212);
@@ -66,11 +70,12 @@ header {
 }
 
 .text_link:hover {
+    color: inherit;
     text-decoration: underline;
 }
 
 .icon_link {
-    color: inherit;
+    color: rgb(158, 158, 158);
     font-size: 1.1rem;
 
     width: 30px;
@@ -146,4 +151,37 @@ main {
 }
 .input_icon:hover{
     opacity: 0.6;
+}
+.language_text{
+    font-size: .8rem;
+}
+.language_link{
+    color: royalblue;
+}
+.language_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer{
+   background-color: rgb(233, 233, 233);
+   font-size: .8rem;
+}
+
+footer>div{
+    padding: 1rem;
+}
+.footer_grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.footer_links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width:640px){
+
 }
